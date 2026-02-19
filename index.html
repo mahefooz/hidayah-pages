@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Hidayah</title>
+    <meta name="description" content="Privacy Policy for Hidayah - Your Daily Islamic Companion app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --emerald: #00695C;
+            --emerald-dark: #004D40;
+            --gold: #FFB300;
+            --dark: #1A1A2E;
+            --text: #333333;
+            --text-light: #666666;
+            --bg: #FAFAFA;
+            --white: #FFFFFF;
+            --border: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Header ── */
+        header {
+            background: linear-gradient(135deg, var(--emerald-dark) 0%, var(--emerald) 100%);
+            padding: 48px 24px 56px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 60deg, rgba(255,255,255,0.04) 60deg, rgba(255,255,255,0.04) 120deg, transparent 120deg);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-icon {
+            margin-bottom: 12px;
+        }
+
+        .header-icon svg {
+            width: 56px;
+            height: 56px;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+        }
+
+        .header-arabic {
+            font-size: 18px;
+            color: var(--gold);
+            letter-spacing: 3px;
+            margin-bottom: 2px;
+        }
+
+        .header-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .page-label {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 6px 20px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 50px;
+            color: var(--white);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        /* ── Main Content ── */
+        main {
+            max-width: 720px;
+            margin: -24px auto 0;
+            padding: 0 24px 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .last-updated {
+            display: inline-block;
+            padding: 4px 14px;
+            background: #E8F5E9;
+            color: var(--emerald);
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 20px;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--emerald);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #E0F2F1;
+        }
+
+        h2:first-of-type {
+            margin-top: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--text);
+            margin-bottom: 12px;
+            line-height: 1.75;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        ul li {
+            font-size: 14px;
+            color: var(--text);
+            padding: 6px 0 6px 24px;
+            position: relative;
+            line-height: 1.65;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 14px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E0F2F1, #F1F8E9);
+            border-left: 3px solid var(--emerald);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 13.5px;
+            color: var(--emerald-dark);
+        }
+
+        a {
+            color: var(--emerald);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--emerald);
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            padding: 32px 24px 40px;
+            color: var(--text-light);
+            font-size: 13px;
+        }
+
+        footer .brand {
+            font-weight: 600;
+            color: var(--emerald);
+        }
+
+        footer .divider {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--gold);
+            margin: 16px auto;
+            border-radius: 2px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            header { padding: 36px 16px 44px; }
+            .header-title { font-size: 22px; letter-spacing: 3px; }
+            main { padding: 0 12px 40px; }
+            .card { padding: 28px 20px; border-radius: 12px; }
+            h2 { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="header-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 30 L50 82" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="none"/>
+                <path d="M50 32 Q50 28 46 26 L18 20 Q14 19 14 23 L14 70 Q14 74 18 75 L46 80 Q50 81 50 78 Z" fill="rgba(255,255,255,0.95)"/>
+                <path d="M50 32 Q50 28 54 26 L82 20 Q86 19 86 23 L86 70 Q86 74 82 75 L54 80 Q50 81 50 78 Z" fill="rgba(255,255,255,0.85)"/>
+                <path d="M48 30 Q50 28 52 30 L52 80 Q50 82 48 80 Z" fill="rgba(0,0,0,0.05)"/>
+                <circle cx="50" cy="14" r="9" fill="#FFB300"/>
+                <circle cx="54" cy="12" r="7.5" fill="#00695C"/>
+            </svg>
+        </div>
+        <div class="header-arabic">هِدَايَة</div>
+        <div class="header-title">Hidayah</div>
+        <div class="header-subtitle">Your Daily Islamic Companion</div>
+        <div class="page-label">Privacy Policy</div>
+    </div>
+</header>
+
+<main>
+    <div class="card">
+        <span class="last-updated">Last Updated: February 19, 2026</span>
+
+        <h2>Introduction</h2>
+        <p>LaunchIX ("we," "our," or "us") built the <strong>Hidayah</strong> app ("App") as a free app. This page informs you of our policies regarding the collection, use, and disclosure of personal information for users of our App.</p>
+        
+        <div class="highlight-box">
+            <p><strong>In short:</strong> Hidayah works completely offline. We do <strong>not</strong> collect, store, transmit, or share any personal data whatsoever.</p>
+        </div>
+
+        <h2>Information We Collect</h2>
+        <p>Hidayah is designed to work entirely offline and does not collect any user data. Specifically:</p>
+        <ul>
+            <li>No personal information (name, email, phone number) is collected</li>
+            <li>No usage analytics or tracking data is collected</li>
+            <li>No advertising identifiers are collected</li>
+            <li>No cookies or similar tracking technologies are used</li>
+            <li>No data is shared with third parties</li>
+        </ul>
+
+        <h2>Location Data</h2>
+        <p>The App requests location permission solely to calculate accurate prayer times for your city. Your location data:</p>
+        <ul>
+            <li>Is processed entirely on your device</li>
+            <li>Is never transmitted to any server</li>
+            <li>Is never shared with any third party</li>
+            <li>Can be replaced with manual city selection at any time</li>
+        </ul>
+        <p>You can deny location permission entirely and manually select your city instead. The app will function fully without granting location access.</p>
+
+        <h2>Local Storage</h2>
+        <p>The App stores your preferences (selected city, madhab, font size, bookmarks, alarm settings) locally on your device using SharedPreferences and a local SQLite database. This data:</p>
+        <ul>
+            <li>Never leaves your device</li>
+            <li>Is not accessible to us or any third party</li>
+            <li>Is deleted when you uninstall the app</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Our App does not specifically target children under 13. We do not knowingly collect personal information from children. Since we do not collect any personal data from any user, this concern does not apply.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>The App does not use any third-party services that collect information. There are no ads, analytics SDKs, or tracking tools integrated in the App.</p>
+
+        <h2>Data Security</h2>
+        <p>Since the App does not collect, store, or transmit any user data to external servers, there is no risk of data breach or unauthorized access to your personal information through our systems. All data remains on your device under your control.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top.</p>
+        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@launchix.in">support@launchix.in</a></li>
+            <li><strong>Developer:</strong> LaunchIX</li>
+            <li><strong>Location:</strong> Hyderabad, India</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <span class="divider"></span>
+    <p><span class="brand">Hidayah</span> — Your Daily Islamic Companion</p>
+    <p>&copy; 2026 LaunchIX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
